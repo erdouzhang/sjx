@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标放上三角形旋转</title>
+    <style>
+        #box {
+            margin: 100px auto;
+            width: 0;
+            height: 0;
+            border: 30px solid transparent;/*三角形宽30px 边框都为透明*/
+            border-top-color: red;/*顶部边框为红色*/
+            border-bottom: none;/*底部去掉边框*/
+            transition: all 1s ease 0s;/*all是所有属性都将获得动画效果  1秒玩完成动画 ease(逐渐变慢)*/
+        }
+
+        #box:hover {
+            transform: rotate(180deg);/*旋转180度*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>
